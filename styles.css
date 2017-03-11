@@ -4,16 +4,13 @@ body{
 	font-family: Roboto, Sans-serif;
 	margin: 0;
 	padding: 0;
-	min-height: 2000px;
 }
 
 ul{
 	list-style-type: none;
-	
 }
 a{
 	text-decoration: none;
-	
 }
 
 
@@ -27,13 +24,21 @@ a{
 	width: 100%;
 	background-color:#3498db;
 	min-height: 80px;
+	box-shadow: 0px 1px 5px black;
 }
-	
+.nav ul{
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+}
+.nav a {
+	width: 100px;
+}
 .navbaritem > li{
 	display: inline-block;
 	padding-right: 50px;
 	float:right;
-	padding-top: 10px;
+	padding-top: 5%;
 }
 .navbaritem a{
 	color:white;
@@ -54,3 +59,41 @@ a{
 .navbaritem a:hover{
 	color:#96CBC8;
 }
+.nav a#pull{
+	display: none;
+}
+
+@media screen and (max-width: 600px){
+	.nav{
+		min-height: 10%;
+	}
+	.nav li{
+		width: 50%;
+		float:right;
+		position: relative;
+	}
+	.nav a#pull{
+		display: block;
+		float: right;
+		position: relative;
+		color: white;
+		font-size: 1.5em;
+		padding-top: 25px;
+		
+	}
+	.navbaritem{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/
